@@ -27,7 +27,7 @@ This repository documents my **Week 3 Cybersecurity & Ethical Hacking** practica
 4. **Flag Retrieval:** Unlocked the protected PDF using the recovered password to verify and capture the flags[cite: 1, 2, 28, 29].
 
 #### 📸 Module 1 Captured Flags
-| Flag 1 (`nw{networkwalks_flag1_jtr_270521_1}`) | Flag 2 (`nw{networkwalks_persistence_jtr_270521}`) |
+| Flag 1 (`nw{networkwalks_flag1_jtr_270521_1}`)[cite: 1] | Flag 2 (`nw{networkwalks_persistence_jtr_270521}`)[cite: 2] |
 | :---: | :---: |
 | ![Module 1 Flag 1](screenshots/1.jpg) | ![Module 1 Flag 2](screenshots/2.jpg) |
 
@@ -39,25 +39,17 @@ This repository documents my **Week 3 Cybersecurity & Ethical Hacking** practica
 3. **Match & Unlock:** Matched the hash against `password1` at 91% wordlist progress and unlocked the target PDFs to capture the remaining flags[cite: 3, 5, 6, 13].
 
 #### 📸 Module 2 Execution & Cracked Password
-| Dictionary Attack Running (70%) | Password Cracked (`password1` at 91%) |
+| Dictionary Attack Running (70%)[cite: 4] | Password Cracked (`password1` at 91%)[cite: 5] |
 | :---: | :---: |
 | ![Dictionary Attack Running](screenshots/5.jpg) | ![Password Cracked](screenshots/6.jpg) |
 
 #### 📸 Module 2 Captured Flags
-| Flag 1 (`nw{networkwalks_flag_260821_1}`) | Flag 2 (`nw{cybersecurity_flag_captured_2608}`) |
+| Flag 1 (`nw{networkwalks_flag_260821_1}`)[cite: 3] | Flag 2 (`nw{cybersecurity_flag_captured_2608}`)[cite: 6] |
 | :---: | :---: |
-| ![Module 2 Flag 1](screenshots/3.jpg) | ![Module 2 Flag 2](screenshots/Screenshot%202026-11-16%20231514.jpg) |
+| ![Module 2 Flag 1](screenshots/3.jpg) | ![Module 2 Flag 2](screenshots/4.jpg) |
 
 ---
 
 ## 💡 Key Security Takeaways
 * **Hashing vs. Encryption:** While the PDF contents are encrypted, the password verification relies on a one-way cryptographic hash that can be extracted and tested offline[cite: 9, 15].
-* **Password Entropy Matters:** Simple dictionary words like `password1` are compromised within seconds[cite: 5, 9, 15]. Enforcing strong password length, complexity, and random entropy is critical to resisting offline cracking attacks[cite: 9, 15].
-
----
-
-## 🙏 Acknowledgments
-Special thanks to **Networkwalks Academy** and **Waqas Karim** for designing practical, hands-on cybersecurity labs and providing structured mentorship throughout Week 3[cite: 1, 8, 9, 17].
-
----
-*Disclaimer: All techniques and tools documented in this repository were performed strictly in an authorized educational lab environment for defensive auditing and learning purposes.*
+* **Password Entropy Matters:** Simple dictionary words like `password1` are compromised within seconds[cite: 5, 9, 15]. Enforcing strong password length, complexity, and random entropy is critical to resisting offline cracking attacks[cite: 9, 15]
