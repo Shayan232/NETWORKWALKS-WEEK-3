@@ -1,4 +1,3 @@
-
 # 🔐 Week 3 Assignment: PDF Password Cracking & Hash Analysis
 
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
@@ -19,7 +18,7 @@ This repository documents my **Week 3 Cybersecurity & Ethical Hacking** practica
 
 ---
 
-## 🛠️ Lab Walkthrough & Methodology
+## 🛠️ Lab Walkthrough & Screenshots
 
 ### 🔹 Module 1: Password Cracking with John the Ripper (Johnny GUI)
 1. **Environment Setup:** Installed **John the Ripper (1.9.0-jumbo-1)** and linked `john.exe` inside the **Johnny GUI** settings[cite: 18, 19, 20].
@@ -27,10 +26,27 @@ This repository documents my **Week 3 Cybersecurity & Ethical Hacking** practica
 3. **Dictionary Attack:** Loaded `hash1.txt` into Johnny (`PASSWD format`) and initiated the attack, successfully recovering the password (`password1`)[cite: 25, 26, 27].
 4. **Flag Retrieval:** Unlocked the protected PDF using the recovered password to verify and capture the flags[cite: 1, 2, 28, 29].
 
+#### 📸 Module 1 Captured Flags
+| Flag 1 (`nw{networkwalks_flag1_jtr_270521_1}`) | Flag 2 (`nw{networkwalks_persistence_jtr_270521}`) |
+| :---: | :---: |
+| ![Module 1 Flag 1](screenshots/1.jpg) | ![Module 1 Flag 2](screenshots/2.jpg) |
+
+---
+
 ### 🔹 Module 2: Password Cracking with Networkwalks Web Tools
 1. **Local Hash Parsing:** Uploaded the encrypted PDF to the **Networkwalks Hash Calculator** to extract the `$pdf$` hash locally in the browser[cite: 10, 11].
 2. **Dictionary Attack Execution:** Pasted the extracted hash into the **Networkwalks Password Cracker** and executed a dictionary attack against a wordlist[cite: 4, 12].
 3. **Match & Unlock:** Matched the hash against `password1` at 91% wordlist progress and unlocked the target PDFs to capture the remaining flags[cite: 3, 5, 6, 13].
+
+#### 📸 Module 2 Execution & Cracked Password
+| Dictionary Attack Running (70%) | Password Cracked (`password1` at 91%) |
+| :---: | :---: |
+| ![Dictionary Attack Running](screenshots/5.jpg) | ![Password Cracked](screenshots/6.jpg) |
+
+#### 📸 Module 2 Captured Flags
+| Flag 1 (`nw{networkwalks_flag_260821_1}`) | Flag 2 (`nw{cybersecurity_flag_captured_2608}`) |
+| :---: | :---: |
+| ![Module 2 Flag 1](screenshots/3.jpg) | ![Module 2 Flag 2](screenshots/Screenshot%202026-11-16%20231514.jpg) |
 
 ---
 
